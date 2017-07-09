@@ -33,7 +33,7 @@ if((age >= 5) && (age <= 6)){
 
 
 // SECTION START
-function openAlert(mess) {
+/*function openAlert(mess) {
     alert(mess);
 }
 
@@ -60,8 +60,20 @@ document.getElementById('myH2').onmouseover = function(event) {
 document.getElementById('myH2').onmouseout = function(event) {
     document.getElementById('myH2').style.color = "#9f0c0c";
 }
+*/
 
+$(document).ready(function() {
+    $(".text-container").on("click", function() {
+        $(this).toggleClass('textChg');
+    });
 
-$("p").on("mouseover", function() {
-    $(this).css("backgroundColor", "#555"),
-});
+    $('#logoButton').click(function() {
+        /*var div =$('.newPicWrap');
+        div.animate({left: '100px'}, "slow");
+        div.animate({width: '50%'}, "slow");*/
+        $('.newPicWrap').toggleClass('newPicChg');
+            //width: '50%'
+        //});
+    });
+
+})

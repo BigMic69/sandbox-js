@@ -1,4 +1,5 @@
 html
+  position: relative
   margin: 0
   padding: 0
   box-sizing: border-box
@@ -14,6 +15,10 @@ body
     display: none
   .show
     display: inline !important
+
+//.row
+  display: flex
+  flex-flow: row
 
 .borderBlue
   +container-shadow-1(#0410a8)
@@ -31,29 +36,58 @@ a
   .text-container
     +cush(0 0 10vh, 30px)
     text-align: center
-    background: $clr-med-grey-half
-    box-shadow: 2px 2px 4px 2px #ddd
-    border: thin solid #eee
-  button
-    width: 40%
-    height: auto
-    +cush(0 30%, 20px)
-    //+move(left, translate(20%, 0))
-    border: thin solid #eee
-    background: #555
-    font-size: 1.25em
-    font-weight: 700
-    letter-spacing: 2px
-    +container-shadow-1(#ccc)
-    +b-rad(10px)
+    +trans-1
+    h2
+      +box-fluid
 
     @media (max-width: 768px) and (orientation: portrait)
       font-size: 1em
     @media (max-width: 768px) and (orientation: landscape)
       font-size: 1em
 
-#newPic
+.textChg
+  background: $clr-med-grey-half
+  box-shadow: 2px 2px 4px 2px #ddd
+  //border: thin solid #eee
+
+.newPicWrap
+  +box-config(40%, auto, 20px 30%, 0)
+  +trans-1
+.newPic
   width: 100%
   height: auto
   margin: 0 auto
   padding: 0
+  +trans-1
+.newPicChg
+  //background-image: url(../img/car-1.png)
+  //+bg-cover-fixed
+  +box-config(80%, auto, 20px 10%, 0)
+  box-shadow: 2px 2px 4px 2px #333
+  +trans-1
+
+button
+  width: 40%
+  height: auto
+  +cush(0 30%, 20px 0)
+  //+move(left, translate(20%, 0))
+  border: thin solid #eee
+  background: #555
+  font-size: 1.25em
+  font-weight: 700
+  letter-spacing: 2px
+  +container-shadow-1(#ccc)
+  +b-rad(10px)
+
+.card-panel
+  margin: 0 auto
+  color: #b52b2b
+  @media (min-width: 993px)
+    p
+      float: left
+      width: 60%
+      padding-right: 20px
+    img
+      float: right
+      width: 40%
+      filter: grayscale(100)

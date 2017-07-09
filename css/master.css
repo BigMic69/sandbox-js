@@ -6791,6 +6791,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 html {
+  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6827,33 +6828,73 @@ a {
     padding: 30px;
     box-sizing: border-box;
     text-align: center;
-    background: rgba(51, 51, 51, 0.5);
-    box-shadow: 2px 2px 4px 2px #ddd;
-    border: thin solid #eee; }
-  .jumbotron button {
-    width: 40%;
-    height: auto;
-    margin: 0 30%;
-    padding: 20px;
-    box-sizing: border-box;
-    border: thin solid #eee;
-    background: #555;
-    font-size: 1.25em;
-    font-weight: 700;
-    letter-spacing: 2px;
-    box-shadow: 2px 2px 4px 1px #ccc;
-    border-radius: 10px; }
+    transition: 1s ease 0.5s; }
+    .jumbotron .text-container h2 {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; }
     @media (max-width: 768px) and (orientation: portrait) {
-      .jumbotron button {
+      .jumbotron .text-container {
         font-size: 1em; } }
     @media (max-width: 768px) and (orientation: landscape) {
-      .jumbotron button {
+      .jumbotron .text-container {
         font-size: 1em; } }
 
-#newPic {
+.textChg {
+  background: rgba(51, 51, 51, 0.5);
+  box-shadow: 2px 2px 4px 2px #ddd; }
+
+.newPicWrap {
+  width: 40%;
+  height: auto;
+  margin: 20px 30%;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s ease 0.5s; }
+
+.newPic {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  transition: 1s ease 0.5s; }
+
+.newPicChg {
+  width: 80%;
+  height: auto;
+  margin: 20px 10%;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px 2px #333;
+  transition: 1s ease 0.5s; }
+
+button {
+  width: 40%;
+  height: auto;
+  margin: 0 30%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border: thin solid #eee;
+  background: #555;
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 4px 1px #ccc;
+  border-radius: 10px; }
+
+.card-panel {
+  margin: 0 auto;
+  color: #b52b2b; }
+  @media (min-width: 993px) {
+    .card-panel p {
+      float: left;
+      width: 60%;
+      padding-right: 20px; }
+    .card-panel img {
+      float: right;
+      width: 40%;
+      filter: grayscale(100); } }
 
 /*# sourceMappingURL=master.css.map */
