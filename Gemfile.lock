@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    materialize-sass (0.99.0)
+      sass (~> 3.3)
+    sass (3.4.25)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  materialize-sass (~> 0.99.0)
+  sass (~> 3.4, >= 3.4.25)
+
+BUNDLED WITH
+   1.15.1

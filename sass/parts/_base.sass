@@ -1,0 +1,59 @@
+html
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-size: 16px
+  letter-spacing: 1.5px !important
+
+body
+  margin: 0
+  padding: 20px 20px 80px
+  font-size: 2em
+  +text-oregano
+  .hidden
+    display: none
+  .show
+    display: inline !important
+
+.borderBlue
+  +container-shadow-1(#0410a8)
+a
+  text-decoration: none !important
+
+.jumbotron
+  +cush(20px, 10vh 0)
+  color: $clr-light-grey
+  background:
+    image: url(../img/image-mix-01.png)
+    size: cover
+    attachment: fixed
+    position: center center
+  .text-container
+    +cush(0 0 10vh, 30px)
+    text-align: center
+    background: $clr-med-grey-half
+    box-shadow: 2px 2px 4px 2px #ddd
+    border: thin solid #eee
+  button
+    width: 40%
+    height: auto
+    +cush(0 30%, 20px)
+    //+move(left, translate(20%, 0))
+    border: thin solid #eee
+    background: #555
+    font-size: 1.25em
+    font-weight: 700
+    letter-spacing: 2px
+    +container-shadow-1(#ccc)
+    +b-rad(10px)
+
+    @media (max-width: 768px) and (orientation: portrait)
+      font-size: 1em
+    @media (max-width: 768px) and (orientation: landscape)
+      font-size: 1em
+
+#newPic
+  width: 100%
+  height: auto
+  margin: 0 auto
+  padding: 0

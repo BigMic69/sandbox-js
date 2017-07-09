@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <p id="sayHello"></p>
+
+    <a href="JavaScript:void(0)" onClick="alert('Hello');">Say Hello</a><br />
+    <hr>
+    <a href="JavaScript:void(0)" onClick="openAlert('What up doe?');">Say it back, PUNK!!!</a><br />
+    <hr>
+    <a href="JavaScript:void(0)"
+    onmouseover="this.style.color='red';"
+    onmouseout="this.style.color='#333';">Change me, PLEASE...</a><br />
+
+    <div class="jumbotron">
+      <div class="text-container">
+        <h2 id="myH2">MCCGraphics.info</h2>
+        <p>Watch the magic happen</p>
+      </div>
+      <button id="logoButton" class="btn btn-large">Push Me</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div onmouseover="setTimeout(myFunction, 3000)" class="newPic-wrap col m10 push-m1">
+          <img src="img/image-mix-01.png" alt="" id="newPic">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
+  </body>
+</html>

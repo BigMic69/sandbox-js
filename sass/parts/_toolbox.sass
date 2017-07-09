@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Bellefair|Cinzel+Decorative|Doppio+One|Oregano")
+@mixin text-bellefair
+  font-family: 'Bellefair', serif
+@mixin text-doppio-one
+  font-family: 'Doppio One', sans-serif
+@mixin text-cinzel
+  font-family: 'Cinzel Decorative', cursive
+@mixin text-oregano
+  font-family: 'Oregano', cursive
+
+@mixin bg-cover-fixed
+  background:
+    size: cover
+    position: center
+    attachment: fixed
+
+@mixin cush($margin, $padding)
+  margin: $margin
+  padding: $padding
+  box-sizing: border-box
+@mixin no-cush
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+@mixin box-config($width, $height, $margin, $padding)
+  width: $width
+  height: $height
+  margin: $margin
+  padding: $padding
+  box-sizing: border-box
+@mixin box-fluid
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+@mixin row-flex
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+@mixin space
+  +cush(10vh auto, 0)
+
+@mixin b-rad($radius)
+  border-radius: $radius
+
+@mixin menu-style
+  text-decoration: none
+  list-style: none
+
+@mixin trans-0
+  transition: .5s ease .2s
+@mixin trans-1
+  transition: 1s ease .5s
+@mixin trans-2
+  transition: 2s ease .5s
+@mixin trans($property)
+  transition:
+    property: $property
+    duration: 1s
+    delay: .1s
+    timing-function: ease-in-out
+
+@mixin move($origin, $property)
+  transform-origin: $origin
+  transform: $property
+
+//----- COLORS ----->>>>>
+$clr-light-grey: #dddddd
+$clr-light-grey-half: rgba(#dddddd, 0.50)
+$clr-med-grey: #333333
+$clr-med-grey-half: rgba(#333333, 0.50)
+$clr-dark-blue: #0c0e16
+$clr-dark-blue-half: rgba(#0c0e16, 0.15)
+$clr-orange: #e33d00
+$clr-orange-half: rgba(#e33d00, 0.5)
+
+@mixin outline-orange
+  border: thin solid $clr-orange
+@mixin para-shadow-1
+  text-shadow: 1px 1px 1px $clr-orange
+@mixin container-shadow-1($color)
+  box-shadow: 2px 2px 4px 1px $color
+
+$font-1: 'Droid Serif', serif
+$font-2: 'Ubuntu', sans-serif
+$font-3: 'Playfair Display', serif
