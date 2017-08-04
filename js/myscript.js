@@ -63,7 +63,7 @@ document.getElementById('myH2').onmouseout = function(event) {
 */
 
 $(document).ready(function() {
-    $(".text-container").on("click", function() {
+    $(".text-container").on("mouseenter", function() {
         $(this).toggleClass('textChg');
     });
 

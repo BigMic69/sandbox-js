@@ -6802,7 +6802,7 @@ body {
   margin: 0;
   padding: 20px 20px 80px;
   font-size: 2em;
-  font-family: "Oregano", cursive; }
+  font-family: "Cinzel Decorative", cursive; }
   body .hidden {
     display: none; }
   body .show {
@@ -6882,19 +6882,24 @@ button {
   font-weight: 700;
   letter-spacing: 2px;
   box-shadow: 2px 2px 4px 1px #ccc;
-  border-radius: 10px; }
+  border-radius: 20px; }
 
 .card-panel {
-  margin: 0 auto;
-  color: #b52b2b; }
+  width: 100%;
+  margin: 10vh auto;
+  color: #c7c7c7;
+  text-shadow: 1px 1px 0.5px #fff; }
+  .card-panel img {
+    background: rgba(22, 22, 22, 0); }
   @media (min-width: 993px) {
-    .card-panel p {
-      float: left;
-      width: 60%;
-      padding-right: 20px; }
+    .card-panel .vetteWrap {
+      float: right;
+      width: 45%;
+      height: auto; }
     .card-panel img {
       float: right;
-      width: 40%;
-      filter: grayscale(100); } }
+      width: 45%;
+      shape-outside: border-box;
+      shape-margin: 20px; } }
 
 /*# sourceMappingURL=master.css.map */
