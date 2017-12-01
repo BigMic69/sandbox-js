@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="stylesheets/master.css">
 </head>
 
 <body>
@@ -21,38 +16,54 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <p id="sayHello"></p>
+  <div id="wrapMain">
 
-  <a href="JavaScript:void(0)" onClick="alert('Hello');">Say Hello</a><br />
-  <hr>
-  <a href="JavaScript:void(0)" onClick="openAlert('What up doe?');">Say it back, PUNK!!!</a><br />
-  <hr>
-  <a href="JavaScript:void(0)" onmouseover="this.style.color='red';" onmouseout="this.style.color='#333';">Change me, PLEASE...</a><br />
-
-  <div class="jumbotron">
-    <div class="text-container">
-      <h2 id="myH2">MCCGraphics.info</h2>
-      <p>Watch the magic happen</p>
+    <!-- HELLO BUTTON SECTION START -->
+    <h1>Button Response</h1>
+    <div id="helloContainer">
+      <p id="sayHello">> Say Hello (push btn for response)</p>
+      <div id="myBtn">Push Me</div>
+      <hr>
     </div>
-  </div>
 
-  <div class="container-fluid picBox">
-    <div class="row">
-      <button id="logoButton" class="btn btn-large">Push Me</button>
-      <div class="newPicWrap">
-        <img src="img/image-mix-01.png" alt="" id="newPic" class="newPic">
+    <!-- HELLO LINKS SECTION START -->
+    <h1>Hello Links</h1>
+    <div id="aLinks">
+      <a>Say Hello</a>
+      <a>Say it back, PUNK!!!</a>
+      <a>Change me, PLEASE...</a>
+    </div>
+
+    <!-- JUMBOTRON SECTION START -->
+    <div class="jumbotron">
+      <div id="textContainer">
+        <h2 id="myH2">MCCGraphics.info</h2>
+        <p>Watch the magic happen</p>
       </div>
     </div>
+
+    <hr>
+
+    <!-- SMALL TOGGLE PIC WITH BUTTON -->
+    <div class="container-fluid picBox">
+      <h1>Toggle Pic</h1>
+      <div id="logoButton" class="btn logo-btn">Toggle Pic Below</div>
+      <div class="newPicWrap">
+        <img src="img/image-mix-01.png" alt="" id="mixPic" class="mixPic">
+        <img src="img/f1-prototype.jpg" alt="" id="protoPic" class="protoPic">
+      </div>
+    </div>
+    <hr>
   </div>
 
-  <div class="card-panel grey darken-4 container">
-    <img src="img/corvette-1-crop.png" alt="" class="img-responsive img-rounded">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non sapiente eum molestias ut sed quo magnam, tenetur nesciunt nisi similique dolor pariatur ducimus itaque provident totam laborum ipsam illum accusantium, sint consequatur. Tenetur nam quo eveniet? Debitis vero, at doloremque mollitia numquam, in nemo. Vero minus beatae voluptates, veniam necessitatibus labore veritatis! Ipsam autem voluptatem, accusantium ea tempore earum eligendi, eveniet culpa consequatur quidem saepe id minus excepturi rerum veniam maiores repudiandae porro doloremque ratione!</p>
-  </div>
 
-
-
-
+  <!-- BOX SECTION -->
+  <section id="boxSection">
+    <div id="box1" class="box">BOX 1</div>
+    <div id="box2" class="box">BOX 2</div>
+    <div id="box3" class="box">BOX 3</div>
+    <div id="box4" class="box">BOX 4</div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
