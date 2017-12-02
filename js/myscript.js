@@ -70,7 +70,7 @@ function bgChange2() {
 
 
 
-// SMALL PIC BOX WITH BUTTON ==========
+// SMALL TOGGLE PIC WITH BUTTON ==========
 
 var logoButton = document.getElementById('logoButton');
 logoButton.addEventListener('click', picFlip);

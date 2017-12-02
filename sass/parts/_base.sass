@@ -35,7 +35,11 @@ h1
   +shadow-5-color(#f6f6f6)
   @media (min-width: 700px)
     font-size: 2.5em
-
+p,
+a
+  font-size: 1em
+  @media (min-width: 700px)
+    font-size: 1.7em
 
 // HELLO CONTAINER START
 #helloContainer
@@ -75,7 +79,6 @@ h1
 // HELLO LINKS START //
 #aLinks
   padding: 1em
-  font-size: 2em
   a
     display: flex
     margin: 10px auto
@@ -87,7 +90,7 @@ h1
 
 
 .jumbotron
-  +cush(20px, 10vh 0)
+  +cush(20px auto, 10vh 0)
   color: #333
   background:
     image: url(../img/image-mix-01.png)
@@ -100,11 +103,16 @@ h1
     text-align: center
     +trans-1
     h2
-      font-size: 2.25em
+      font-size: 1.3em
       +box-fluid
       +no-cush
-    @media (max-width: 700px)
+      @media (min-width: 700px)
+        font-size: 2.25em
+    p
       font-size: 1em
+      @media (min-width: 700px)
+        font-size: 1.75em
+
 
 .textChg
   background: $clr-med-grey-half

@@ -10180,17 +10180,30 @@ h1 {
   }
 }
 
-/* line 41, ../sass/parts/_base.sass */
+/* line 38, ../sass/parts/_base.sass */
+p,
+a {
+  font-size: 1em;
+}
+@media (min-width: 700px) {
+  /* line 38, ../sass/parts/_base.sass */
+  p,
+  a {
+    font-size: 1.7em;
+  }
+}
+
+/* line 45, ../sass/parts/_base.sass */
 #helloContainer {
   padding: 20px 20px 80px;
   background: rgba(242, 21, 21, 0.3);
 }
-/* line 44, ../sass/parts/_base.sass */
+/* line 48, ../sass/parts/_base.sass */
 #helloContainer #myBtn {
   font-size: 1em;
   cursor: pointer;
 }
-/* line 48, ../sass/parts/_base.sass */
+/* line 52, ../sass/parts/_base.sass */
 #helloContainer #sayHello {
   margin: 1em auto;
   padding: 1em;
@@ -10199,7 +10212,7 @@ h1 {
   background: #444;
   border: 1px solid #f8f8f8;
 }
-/* line 55, ../sass/parts/_base.sass */
+/* line 59, ../sass/parts/_base.sass */
 #helloContainer #myBtn {
   width: 40%;
   height: auto;
@@ -10216,26 +10229,25 @@ h1 {
   box-shadow: 1px 1px 5px #f8f8f8;
   border-radius: 20px;
 }
-/* line 69, ../sass/parts/_base.sass */
+/* line 73, ../sass/parts/_base.sass */
 #helloContainer #myBtn:hover {
   background: #333;
   box-shadow: none;
 }
 
-/* line 76, ../sass/parts/_base.sass */
+/* line 80, ../sass/parts/_base.sass */
 #aLinks {
   padding: 1em;
-  font-size: 2em;
 }
-/* line 79, ../sass/parts/_base.sass */
+/* line 82, ../sass/parts/_base.sass */
 #aLinks a {
   display: flex;
   margin: 10px auto;
 }
 
-/* line 89, ../sass/parts/_base.sass */
+/* line 92, ../sass/parts/_base.sass */
 .jumbotron {
-  margin: 20px;
+  margin: 20px auto;
   padding: 10vh 0;
   box-sizing: border-box;
   color: #333;
@@ -10244,7 +10256,7 @@ h1 {
   background-attachment: fixed;
   background-position: center center;
 }
-/* line 97, ../sass/parts/_base.sass */
+/* line 100, ../sass/parts/_base.sass */
 .jumbotron #textContainer {
   display: block;
   margin: 0 0 10vh;
@@ -10253,9 +10265,9 @@ h1 {
   text-align: center;
   transition: 1s ease 0.1s;
 }
-/* line 102, ../sass/parts/_base.sass */
+/* line 105, ../sass/parts/_base.sass */
 .jumbotron #textContainer h2 {
-  font-size: 2.25em;
+  font-size: 1.3em;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -10265,38 +10277,48 @@ h1 {
   padding: 0;
   box-sizing: border-box;
 }
-@media (max-width: 700px) {
-  /* line 97, ../sass/parts/_base.sass */
-  .jumbotron #textContainer {
-    font-size: 1em;
+@media (min-width: 700px) {
+  /* line 105, ../sass/parts/_base.sass */
+  .jumbotron #textContainer h2 {
+    font-size: 2.25em;
+  }
+}
+/* line 111, ../sass/parts/_base.sass */
+.jumbotron #textContainer p {
+  font-size: 1em;
+}
+@media (min-width: 700px) {
+  /* line 111, ../sass/parts/_base.sass */
+  .jumbotron #textContainer p {
+    font-size: 1.75em;
   }
 }
 
-/* line 109, ../sass/parts/_base.sass */
+/* line 117, ../sass/parts/_base.sass */
 .textChg {
   background: rgba(51, 51, 51, 0.5);
   box-shadow: 2px 2px 4px 2px #ddd;
 }
 
-/* line 119, ../sass/parts/_base.sass */
+/* line 127, ../sass/parts/_base.sass */
 .card-panel {
   width: 100%;
   margin: 10vh auto;
   color: #c7c7c7;
   text-shadow: 1px 1px 0.5px #fff;
 }
-/* line 124, ../sass/parts/_base.sass */
+/* line 132, ../sass/parts/_base.sass */
 .card-panel img {
   background: rgba(22, 22, 22, 0);
 }
 @media (min-width: 993px) {
-  /* line 131, ../sass/parts/_base.sass */
+  /* line 139, ../sass/parts/_base.sass */
   .card-panel .vetteWrap {
     float: right;
     width: 45%;
     height: auto;
   }
-  /* line 139, ../sass/parts/_base.sass */
+  /* line 147, ../sass/parts/_base.sass */
   .card-panel img {
     float: right;
     width: 45%;
@@ -10317,7 +10339,7 @@ h1 {
 .picBox .logo-btn {
   width: 80%;
   height: auto;
-  margin: 2em auto 10vh;
+  margin: 2em auto 2em;
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -10326,22 +10348,35 @@ h1 {
   font-size: 1.5em;
   transition: 0.5s ease 0.05s;
 }
-/* line 15, ../sass/parts/_toggle-pic.sass */
+@media (min-width: 700px) {
+  /* line 4, ../sass/parts/_toggle-pic.sass */
+  .picBox .logo-btn {
+    font-size: 1em;
+  }
+}
+/* line 17, ../sass/parts/_toggle-pic.sass */
 .picBox .logo-btn:hover {
   color: #f6f6f6;
   background: #333333;
   box-shadow: 1px 1px 5px #f5f5f5;
 }
-/* line 19, ../sass/parts/_toggle-pic.sass */
+/* line 21, ../sass/parts/_toggle-pic.sass */
 .picBox .newPicWrap {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   padding: 0;
   background: #444;
+  border: thin solid #f3f3f3;
   box-shadow: 1px 1px 5px rgba(195, 21, 114, 0.75);
 }
-/* line 26, ../sass/parts/_toggle-pic.sass */
+@media (min-width: 700px) {
+  /* line 21, ../sass/parts/_toggle-pic.sass */
+  .picBox .newPicWrap {
+    width: 60%;
+  }
+}
+/* line 31, ../sass/parts/_toggle-pic.sass */
 .picBox .newPicWrap img {
   width: 90%;
   margin: 5vh 5%;
@@ -10349,21 +10384,21 @@ h1 {
   box-shadow: 1px 1px 5px rgba(195, 21, 114, 0.75);
   transition: 0.5s ease 0.05s;
 }
-/* line 32, ../sass/parts/_toggle-pic.sass */
+/* line 37, ../sass/parts/_toggle-pic.sass */
 .picBox .newPicWrap img:hover {
   transform: scale(1.2);
 }
-/* line 34, ../sass/parts/_toggle-pic.sass */
+/* line 39, ../sass/parts/_toggle-pic.sass */
 .picBox .newPicWrap #mixPic {
   position: relative;
 }
-/* line 36, ../sass/parts/_toggle-pic.sass */
+/* line 41, ../sass/parts/_toggle-pic.sass */
 .picBox .newPicWrap #protoPic {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 40, ../sass/parts/_toggle-pic.sass */
+/* line 45, ../sass/parts/_toggle-pic.sass */
 .picBox .newPicWrap .hide {
   visibility: hidden;
 }
