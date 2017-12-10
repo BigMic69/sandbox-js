@@ -5,6 +5,13 @@
     position: center
     attachment: fixed
 
+@mixin bg-vert
+  background:
+    size: auto 100vh
+    position: center
+    repeat: no-repeat
+    // attachment: fixed
+
 @mixin cush($margin, $padding)
   margin: $margin
   padding: $padding
@@ -67,13 +74,14 @@ $clr-dark-blue: #0c0e16
 $clr-dark-blue-half: rgba(#0c0e16, 0.15)
 $clr-orange: #e33d00
 $clr-orange-half: rgba(#e33d00, 0.5)
+$clr-baby-blue: rgb(6, 138, 223)
 
 @mixin outline-orange
   border: thin solid $clr-orange
 @mixin para-shadow-1
   text-shadow: 1px 1px 1px $clr-orange
 @mixin shadow-5-color($color)
-  box-shadow: 1px 1px 5px $color
+  box-shadow: 1px 1px 10px $color
 
 $font-1: 'Droid Serif', serif
 $font-2: 'Ubuntu', sans-serif

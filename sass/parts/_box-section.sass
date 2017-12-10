@@ -1,8 +1,68 @@
-#boxSection
+#btnDrop
+  display: flex
+  justify-content: center
+  width: 90%
+  margin: 1em auto
+  padding: 1em
+  font-size: 1.2em
+  background: #d2d2d2
+  cursor: pointer
+  box-shadow: 1px 1px 8px #333
+  +trans-0
+  &:hover
+    color: #f3f3f3
+    background: #666
+  @media (min-width: 700px)
+    width: 60%
+    font-size: 2em
+
+.content
   display: grid
-  grid-template-columns: repeat(4, 1fr)
-  grid-gap: 10px
+  grid-template-columns: repeat(3, 1fr)
+  grid-auto-rows: 30vh
   text-align: center
-  margin: 40px auto 40vh
+  margin: 40px auto
+  padding: 20px
+  +trans-1
+  @media (min-width: 700px)
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 20px
   .box
+    +box-fluid
+    display: none
+    overflow: hidden
     background: rgba(#999, .4)
+    box-shadow: 1px 1px 8px #333
+    background-image: url('../img/bike-1.jpg')
+    // +bg-cover-fixed
+    background-size: 100vw auto
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: center
+  #box4
+    grid-column: span 3
+    justify-content: center
+    align-items: center
+    color: #f7f7f7
+    // background: rgba(#333, 1)
+    @media (min-width: 700px)
+      grid-column: span 1
+
+.vision-box
+  display: none
+  width: 100%
+  height: auto
+  padding: 10px
+  color: #333
+  background: rgba(#d4d4d4, 1)
+  &:nth-child(1)
+    margin-top: 10vh
+    transform: rotateZ(-30deg)
+  h5
+    +no-cush
+  p
+    font-size: .9em
+    +no-cush
+
+// .hide-content
+//   visibility: hidden

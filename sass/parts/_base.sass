@@ -9,6 +9,7 @@ html
   font-family: Ubuntu !important
 
 body
+  position: relative
   +no-cush
 
 #wrapMain
@@ -39,16 +40,12 @@ p,
 a
   font-size: 1em
   @media (min-width: 700px)
-    font-size: 1.7em
+    font-size: 1.5em
 
 // HELLO CONTAINER START
 #helloContainer
   padding: 20px 20px 80px
   background: rgba(#f21515, 0.3)
-  #myBtn
-    font-size: 1em
-    cursor: pointer
-
   #sayHello
     margin: 1em auto
     padding: 1em
@@ -57,7 +54,7 @@ a
     background: #444
     border: 1px solid #f8f8f8
   #myBtn
-    width: 40%
+    width: 80%
     height: auto
     +cush(0 auto, 20px 0)
     //+move(left, translate(20%, 0))
@@ -118,35 +115,3 @@ a
   background: $clr-med-grey-half
   box-shadow: 2px 2px 4px 2px #ddd
   //border: thin solid #eee
-
-
-
-
-
-
-.card-panel
-  width: 100%
-  margin: 10vh auto
-  color: #c7c7c7
-  text-shadow: 1px 1px .5px #fff
-  img
-    background: rgba(22, 22, 22, .0)
-  @media (min-width: 993px)
-    p
-      //float: left
-      //width: 60%
-      //padding-right: 20px
-    .vetteWrap
-      float: right
-      width: 45%
-      height: auto
-      //margin-top: 20vh
-      //transform: translate(0, 30vh)
-      //background-image: url(..img/corvette-1-crop.png)
-      //+bg-cover-fixed
-    img
-      float: right
-      width: 45%
-      shape-outside: border-box
-      shape-margin: 20px
-      //width: 100%

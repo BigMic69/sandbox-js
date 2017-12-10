@@ -1,11 +1,12 @@
-// HELLO BUTTON SECTION ==========
+// HELLO BUTTON SECTION
+
 var bod1 = document.getElementById('wrapMain');
 var btn1 = document.getElementById('myBtn');
 
 bod1.style.backgroundColor = '#333';
 btn1.style.color = '#fff';
 btn1.style.fontSize = '2em';
-btn1.style.fontFamily = 'Ubuntu'
+btn1.style.fontFamily = 'Ubuntu';
 btn1.addEventListener('click', putText);
 
 function putText() {
@@ -30,16 +31,19 @@ for (var i = 0; i < link1.length; i++) {
 link1[0].addEventListener('mouseenter', chgLink1);
 link1[1].addEventListener('mouseenter', chgLink2);
 link1[2].addEventListener('mouseenter', chgLink3);
+
 function chgLink1() {
     link1[0].innerHTML = '> "HELLO!!!"';
     link1[0].style.backgroundColor = '#f4f4f4';
     link1[0].style.color = '#333';
 }
+
 function chgLink2() {
     link1[1].innerHTML = '> "Ok-a-y!!!"';
     link1[1].style.backgroundColor = '#f4f4f4';
     link1[1].style.color = '#333';
 }
+
 function chgLink3() {
     link1[2].innerHTML = '> "THIS HAS NOW CHANGED..."';
     link1[2].style.backgroundColor = '#f4f4f4';
@@ -63,6 +67,7 @@ function bgChange1() {
     txtContainer.style.border = '1px solid red';
     txtContainer.style.fontSize = '1.5em';
 }
+
 function bgChange2() {
     txtContainer.style.backgroundColor = 'rgba(33, 33, 33, .4)';
     txtContainer.style.borderRadius = '20px';
@@ -71,35 +76,40 @@ function bgChange2() {
 
 
 // SMALL TOGGLE PIC WITH BUTTON ==========
+var logoButton = document.getElementById('logoButton').addEventListener('click', picFlip);
 
-var logoButton = document.getElementById('logoButton');
-logoButton.addEventListener('click', picFlip);
 function picFlip() {
-    var mixPic = document.getElementsByTagName('img');
+    // var mixPic = document.getElementsByTagName('img');
     var x = document.getElementById('protoPic');
-    // protoPic.className = 'hide';
-    if (x.className === 'protoPic') {
-        x.className = 'hide';
-    } else {
-        x.className = 'protoPic';
-    }
+    x.classList.toggle('hide');
+    // if (x.className === 'protoPic') {
+    //     x.className = 'hide';
+    // } else {
+    //     x.className = 'protoPic';
+    // }
 
 }
-console.log(protoPic);
 
 
 // BOX SECTION ==========
-var boxList = document.querySelector('#boxSection');
-// console.log(boxList.children[0]);
-boxList.children[0].style.backgroundColor = '#333';
-boxList.children[0].style.color = '#f8f8f8';
-boxList.children[0].style.height = '100px';
-boxList.children[0].style.fontSize = '1.75em';
-// console.log(document.images);
+// var bSec = document.getElementById('boxSection'),
+//     resultP = document.getElementById('results1'),
+//     btnDrop = document.getElementById('btnDrop').addEventListener('click', shoGrid);
+//
+// function shoGrid() {
+//     bSec.classList.toggle('hide-content');
+// }
+// resultP.innerHTML = bSec;
+// console.log(bSec);
 
-
-
-
+$(function() {
+    $('#btnDrop').click(function() {
+        $('.box').slideToggle(1000);
+    });
+    $('.content').hover(function() {
+        $('.vision-box').fadeToggle(1000);
+    });
+});
 
 
 // var headerTitle = document.getElementById('myH2');
